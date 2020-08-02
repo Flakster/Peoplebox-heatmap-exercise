@@ -44,4 +44,4 @@ end
 | 1  |   1	| Career Growth	| 4 |
 | 2  |	1	| Role Clarity |	5 |
 | 3	 | 1	| Vision & Leadership |	3 |
-4	2	Role Clarity	3
+| 4  |	2	| Role Clarity |	3 |
