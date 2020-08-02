@@ -37,3 +37,11 @@ end
 |----|----------------|--------------|----------|--------|----|-----------------|
 | 1	 | rahul@acme.com |	Sales	| Bangalore |	Male |	25 |	25-01-2018 |
 | 2	 | divya@acme.com |	Engineering |	New Delhi |	Female |	27 |	11-08-2018 |
+
+## Sample Responses Table
+| id |	employee_id	| driver |	score |
+|----|--------------|--------|--------|
+| 1  |   1	| Career Growth	| 4 |
+| 2  |	1	| Role Clarity |	5 |
+| 3	 | 1	| Vision & Leadership |	3 |
+4	2	Role Clarity	3
