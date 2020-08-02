@@ -33,7 +33,7 @@ end
 # Sample Data
 ## Sample Employee Table
 
-| id | email |	department | location |	gender |age |	date_of_joining |
----------------------------------------------------------------
-| 1	| rahul@acme.com |	Sales	| Bangalore |	Male |	25 |	25-01-2018 |
-| 2	| divya@acme.com |	Engineering |	New Delhi |	Female |	27 |	11-08-2018 |
+| id | email          |	department   | location |	gender |age |	date_of_joining |
+|----|----------------|--------------|----------|--------|----|-----------------|
+| 1	 | rahul@acme.com |	Sales	| Bangalore |	Male |	25 |	25-01-2018 |
+| 2	 | divya@acme.com |	Engineering |	New Delhi |	Female |	27 |	11-08-2018 |
