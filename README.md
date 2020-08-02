@@ -1,24 +1,47 @@
-# README
+# Build a Heatmap API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Peoplebox collects feedback from employees about different dimensions of employee happiness - like Performance Management, Culture, Vision & Leadership, Manager Support etc.
+- These are questions like - 'How happy are you with your company culture?' and this is on the scale of 5
+- As a backend rails developer, you have to provide API data to the Frontend React Engineer who has to build an interface like below.
 
-Things you may want to cover:
+![image](https://user-images.githubusercontent.com/39259/89119488-759f1c00-d4cc-11ea-80ad-8a7792f73000.png)
 
-* Ruby version
+# Models
 
-* System dependencies
+## Employee Model
+```
+class Employee < ApplicationRecord
+  attr_accessor :email
+  attr_accessor :department # Has values - Sales, Engineering
+  attr_accessor :location
+  attr_accessor :gender
+  attr_accessor :age
+  attr_accessor :date_of_joining
+end
+```
 
-* Configuration
+## Response Model (from Survey)
 
-* Database creation
+```
+class Response < ApplicationRecord
+  attr_accessor :driver_name # Values - Role Clarity, Manager, etc
+  attr_accessor :score # Values - 1,2,3,4,5
+  belongs_to :employee
+end
+```
 
-* Database initialization
+# Sample Data
+## Sample Employee Table
 
-* How to run the test suite
+| id | email          |	department   | location |	gender |age |	date_of_joining |
+|----|----------------|--------------|----------|--------|----|-----------------|
+| 1	 | rahul@acme.com |	Sales	| Bangalore |	Male |	25 |	25-01-2018 |
+| 2	 | divya@acme.com |	Engineering |	New Delhi |	Female |	27 |	11-08-2018 |
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Sample Responses Table
+| id |	employee_id	| driver |	score |
+|----|--------------|--------|--------|
+| 1  |   1	| Career Growth	| 4 |
+| 2  |	1	| Role Clarity |	5 |
+| 3	 | 1	| Vision & Leadership |	3 |
+| 4  |	2	| Role Clarity |	3 |
