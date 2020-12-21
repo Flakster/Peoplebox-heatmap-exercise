@@ -3,7 +3,6 @@ class HeatmapController < ApplicationController
     @result =[]
     drivers = Response.select(:driver_name).distinct
     drivers.each do |driver|
-      #scores = Response.joins(:employee).group(:department).having(:driver_name == driver).average(:score)  
       scores = Response.joins(:employee).group(:department).where('driver_name = ?', driver.driver_name).average(:score)  
       pairs = {}
       pairs['driver'] = driver.driver_name
